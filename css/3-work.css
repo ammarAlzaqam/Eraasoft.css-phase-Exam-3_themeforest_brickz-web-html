@@ -1,0 +1,35 @@
+@keyframes width-change {
+  0% {
+    width: 30%;
+    height: 100%;
+    opacity: 0;
+    transform: scale(1.5);
+  }
+
+  100% {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+#work {
+  padding-top: 100px;
+
+  .container {
+    gap: 4.5rem;
+
+    .left {
+      p.des {
+        margin-bottom: 1rem;
+        width: 520px;
+        max-width: 100%;
+      }
+    }
+
+    .right {
+      aspect-ratio: 25/12;
+    }
+  }
+}

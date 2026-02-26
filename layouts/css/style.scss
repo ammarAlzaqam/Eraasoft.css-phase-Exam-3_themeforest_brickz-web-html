@@ -1,0 +1,84 @@
+.nav-link {
+  &:hover {
+    .link {
+      --m: calc(16px * -1);
+      --line-d: 0.84s;
+      --line-x: 65.66%;
+      --line-offset: 63.5px;
+
+      div:last-child svg {
+        opacity: 1;
+      }
+    }
+  }
+
+  .link {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    line-height: 16px;
+    div {
+      overflow: hidden;
+      &:first-child {
+        height: fit-content;
+        display: flex;
+        overflow: hidden;
+        text-shadow: 0 16px 0 #2b3044;
+      }
+      &:last-child {
+        position: absolute;
+        pointer-events: none;
+        right: 0;
+        left: 0;
+        bottom: -3px;
+        height: 5px;
+        svg {
+          display: block;
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 300%;
+          height: 5px;
+          fill: none;
+          stroke: var(--accent);
+          opacity: 0;
+          stroke-width: 1.5px;
+          stroke-linecap: round;
+          stroke-dasharray: 63.5px 128px;
+          stroke-dashoffset: var(--line-offset, 190.25px);
+          transform: translateX(var(--line-x)) translateZ(0);
+          transition:
+            transform var(--line-d, 0s),
+            stroke-dashoffset var(--line-d, 0s),
+            opacity var(--animate);
+        }
+      }
+      span {
+        display: block;
+        backface-visibility: hidden;
+        font-style: normal;
+        transition: transform var(--animate);
+        transform: translateY(var(--m, 0));
+        $i: 1;
+        @while $i < 12 {
+          &:nth-child(#{$i}) {
+            transition-delay: $i / 20 + s;
+          }
+          $i: $i + 1;
+        }
+      }
+    }
+
+    &.active {
+      --m: calc(16px * -1);
+      --line-d: 0.84s;
+      --line-x: 65.66%;
+      --line-offset: 63.5px;
+
+      div:last-child svg {
+        opacity: 1;
+      }
+    }
+  }
+}

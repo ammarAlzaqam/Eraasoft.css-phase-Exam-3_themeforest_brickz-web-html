@@ -1,0 +1,95 @@
+#about {
+  padding-block: 110px;
+  background:
+    url(../images/about/testimonial-bg-shape.png) right bottom/300px no-repeat,
+    linear-gradient(to top, var(--bg) 0% 50%, transparent 50% 100%);
+
+  .container {
+    .left-img {
+      position: relative;
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
+
+      .img-animate-wrapper {
+        aspect-ratio: 27/26;
+      }
+
+      .skill-details {
+        width: 85%;
+        height: 50%;
+        padding: 35px;
+        border-radius: 6px;
+        background-color: white;
+        position: absolute;
+        bottom: 2rem;
+        left: 2rem;
+
+        h3 {
+          position: relative;
+          width: 234px;
+          max-width: 100%;
+          padding-bottom: 13px;
+          margin-block: 10px 24px;
+          border-bottom: 1px solid rgb(227, 227, 232);
+
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 75px;
+            height: 2px;
+            background-color: var(--primary);
+          }
+        }
+
+        p {
+          color: var(--primary);
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 28px;
+          margin-bottom: 10px;
+        }
+
+        .progress-container,
+        .progress-container2 {
+          position: relative;
+          width: 100%;
+          height: 14px;
+          background: rgb(248, 248, 249);
+          padding: 3px;
+          border: 1px solid rgb(219, 222, 225);
+
+          .progress-bar,
+          .progress-bar2 {
+            height: 100%;
+            width: 0%;
+            background: var(--primary);
+            /* transition: width 3s ease; */
+            transition: width 3s cubic-bezier(0.4, 0, 0.2, 1);
+          }
+
+          #percent,
+          #percent2 {
+            position: absolute;
+            top: -30px;
+            left: 0;
+            transform: translateX(-50%);
+            /* transition: left 3s ease; */
+            transition: left 3s cubic-bezier(0.4, 0, 0.2, 1);
+            font-size: 14px;
+            font-weight: 500px;
+            color: var(--primary);
+          }
+        }
+      }
+    }
+
+    .right-content {
+      background-color: rgb(246, 246, 246);
+      padding: 60px 60px 60px 80px;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+    }
+  }
+}

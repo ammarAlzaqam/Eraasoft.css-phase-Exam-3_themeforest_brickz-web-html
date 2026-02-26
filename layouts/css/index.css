@@ -1,0 +1,251 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Cal+Sans&family=Golos+Text:wght@400..900&display=swap");
+
+@import url("./header.css");
+@import url("./footer.css");
+/* @import url("./loader.css"); */
+@import url("./hero-sec.css");
+
+:root {
+  --primary: #1c1c1d;
+  --secondary: #59585d;
+  --accent: #fed403;
+  --bg: #313131;
+
+  --font-head: "Cal Sans", sans-serif;
+  --font-body: "Golos Text", sans-serif;
+
+  --animate: 0.3s ease;
+  --animate-slow: 0.4s ease;
+
+  --animate-duration: 1.5s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: var(--font-body);
+  color: var(--secondary);
+
+  &.letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+  .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+
+  .letter {
+    transform-origin: 50% 100%;
+    display: inline-block;
+    line-height: 1em;
+    color: inherit;
+  }
+}
+
+body {
+  background-color: white;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-head);
+  color: var(--primary) !important;
+
+  * {
+    font-family: var(--font-head);
+    color: var(--primary);
+  }
+}
+
+p,
+span,
+button,
+a,
+i,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.ml12 {
+  opacity: 0;
+  transition: opacity var(--animate-slow);
+  &.animate {
+    opacity: 1;
+  }
+}
+
+.head-text {
+  font-size: clamp(34px, 5.5vw, 54px);
+  font-weight: 400;
+  line-height: clamp(44.2px, 6.5vw, 64px);
+}
+
+.title {
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 62px;
+}
+
+.sub-title {
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+
+  &.head {
+    color: var(--accent);
+  }
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+.des {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.btn {
+  padding-block: 18px;
+  padding-inline: 30px 25px;
+  background-color: var(--accent);
+  border-radius: 50px;
+  transition: background-color var(--animate-slow);
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  &:hover {
+    background-color: white;
+
+    &.dark {
+      background-color: var(--bg);
+    }
+
+    .text {
+      span {
+        transform: translateY(-150%);
+      }
+
+      &::after {
+        transform: translateY(-50%);
+      }
+    }
+
+    .icon {
+      i {
+        &.pri-icon {
+          transform: translate(100%, -100%) rotate(-45deg) scale(0.5);
+        }
+
+        &.sec-icon {
+          transform: translate(0, -50%) rotate(-45deg) scale(1);
+        }
+      }
+    }
+  }
+
+  .text {
+    position: relative;
+    overflow: hidden;
+
+    span {
+      display: block;
+      color: var(--primary);
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 16px;
+      transition: transform var(--animate-slow);
+    }
+
+    &::after {
+      content: "Discover more";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(150%);
+      transition: transform var(--animate-slow);
+
+      color: var(--primary);
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 16px;
+    }
+  }
+
+  .icon {
+    overflow: hidden;
+    position: relative;
+    /* border: 1px solid black; */
+    line-height: 16px;
+    width: 18px;
+    i {
+      color: var(--primary);
+      transform: rotate(-45deg);
+
+      &.pri-icon {
+        transition: transform var(--animate-slow);
+      }
+
+      &.sec-icon {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(-100%, 100%) rotate(-45deg) scale(0.5);
+        transition: transform var(--animate-slow);
+      }
+    }
+  }
+
+  &.dark {
+    .text::after,
+    .icon .sec-icon {
+      color: white;
+    }
+  }
+}
+
+.img-animate-wrapper {
+  overflow-y: hidden;
+
+  &.animate img {
+    animation: width-change 1.5s;
+    opacity: 1;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+  }
+}

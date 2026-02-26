@@ -1,0 +1,128 @@
+#project {
+  padding-top: 70px;
+
+  @media (min-width: 1400px) {
+    padding-inline: 60px;
+  }
+
+  .container {
+    @media (min-width: 1400px) {
+      max-width: 100%;
+    }
+
+    .left {
+      background-color: var(--bg);
+
+      > img {
+        width: 40%;
+        height: 90%;
+        object-fit: cover;
+
+        @media (max-width: 767px) {
+          width: 100%;
+        }
+      }
+
+      .content {
+        > p.des:nth-of-type(2) {
+          padding-bottom: 10px;
+          margin-right: 30px;
+          margin-bottom: 16px;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .check-icon {
+          width: 26px;
+          height: 26px;
+          border-radius: 50%;
+          border: 1px solid rgba(255, 255, 255, 0.1);
+
+          img {
+            width: 14px;
+          }
+        }
+      }
+    }
+
+    .mid {
+      background-color: rgb(246, 246, 246);
+      padding: 30px 35px 37px;
+      border: 1px solid rgb(227, 227, 232);
+
+      form {
+        input,
+        select {
+          color: var(--primary);
+          border: 1px solid rgb(227, 227, 232);
+
+          &:focus {
+            outline: none;
+          }
+
+          &::placeholder {
+            color: var(--primary);
+          }
+        }
+
+        .submit-btn {
+          background-color: var(--bg);
+          font-size: 14px;
+          font-weight: 500;
+          transition: opacity var(--animate);
+
+          &:hover {
+            opacity: 0.9;
+          }
+        }
+      }
+    }
+
+    .right {
+      background: url(../images/project/right-bg.jpg) center/cover;
+
+      @media (max-width: 991px) {
+        height: 370px;
+      }
+
+      .ex-counter {
+        backdrop-filter: blur(21px);
+        background-image: linear-gradient(174deg, #dedfdf4d 0%, #2a2d2d4d 100%);
+        border-top-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+
+        h5 {
+          padding-right: 24px;
+          position: relative;
+          font-size: clamp(80px, 20vw, 125px);
+          font-weight: 400;
+          line-height: clamp(96px, 20vw, 130px);
+
+          &::after {
+            content: "+";
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            font-size: clamp(30px, 5vw, 40px);
+            line-height: 60px;
+            font-weight: 400;
+            font-family: var(--font-head);
+          }
+
+          * {
+            color: white;
+          }
+        }
+
+        h6 {
+          margin-left: 10px;
+
+          font-size: 16px;
+          letter-spacing: 1.12px;
+          font-weight: 500;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+}

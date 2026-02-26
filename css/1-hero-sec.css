@@ -1,0 +1,86 @@
+#home-hero-sec {
+  background: url(../images/hero-sec-bg.jpg) center/cover;
+
+  @media (max-width: 767px) {
+    background-position: left;
+  }
+
+  .container {
+    padding-block: 220px 200px;
+
+    @media (min-width: 1200px) {
+      max-width: 100%;
+      padding-inline: 20px;
+    }
+
+    @media (max-width: 1399px) {
+      padding-block: 132px 150px;
+    }
+
+    @media (max-width: 1399px) {
+      padding-block: 132px 150px;
+    }
+
+    @media (max-width: 991px) {
+      padding-block: 120px;
+    }
+
+    @media (max-width: 767px) {
+      padding-block: 80px;
+    }
+
+    h1 {
+      position: relative;
+      width: 650px;
+      max-width: 50%;
+      margin-block: 10px 35px;
+
+      * {
+        color: white;
+      }
+
+      @media (max-width: 991px) {
+        width: 462px;
+        max-width: 100%;
+      }
+    }
+
+    .divider {
+      position: relative;
+      width: 620px;
+      max-width: 50%;
+      height: 1px;
+      background-color: rgba(255, 255, 255, 0.09);
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 25%;
+        height: 2px;
+        background-color: var(--accent);
+
+        @media (max-width: 991px) {
+          width: 40%;
+        }
+      }
+
+      @media (max-width: 991px) {
+        width: 440px;
+        max-width: 100%;
+      }
+    }
+
+    p.des {
+      width: 585px;
+      max-width: 50%;
+      padding-block: 30px 35px;
+
+      @media (max-width: 991px) {
+        width: 440px;
+        max-width: 100%;
+      }
+    }
+  }
+}

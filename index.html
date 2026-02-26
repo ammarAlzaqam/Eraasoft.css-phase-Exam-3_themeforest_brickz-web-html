@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./icon.png" type="image/png">
+    <!--TODO>> Bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--TODO>> FontAwesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--TODO>> Animate.css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--TODO>> Swiper.js cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <!--TODO>> Aos cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--TODO>> Odometer cdn -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/themes/odometer-theme-default.min.css">
+
+    <link rel="stylesheet" href="./layouts/css/index.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Brickz</title>
+</head>
+
+<body>
+    <!-- TODO>> Loader page -->
+    <!-- <section id="loader" class="fixed-top w-100">
+        <img src="./icon.png" alt="icon-img">
+        <div class="spinner">
+            <div class="spinner1">
+            </div>
+        </div>
+    </section> -->
+
+    <div class="main">
+        <!--TODO>> Header -->
+        <div data-aos="zoom-in" class="cta-top-sec">
+            <div class="container d-flex align-items-center justify-content-center justify-content-lg-between">
+                <div class="left d-flex align-items-center gap-2">
+                    <div class="arrow-icon-wrapper d-flex align-items-center justify-content-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                            <path
+                                d="M439.1 297.4C451.6 309.9 451.6 330.2 439.1 342.7L279.1 502.7C266.6 515.2 246.3 515.2 233.8 502.7C221.3 490.2 221.3 469.9 233.8 457.4L371.2 320L233.9 182.6C221.4 170.1 221.4 149.8 233.9 137.3C246.4 124.8 266.7 124.8 279.2 137.3L439.2 297.3z" />
+                        </svg>
+                    </div>
+                    <p>
+                        Have a Project in Mind?
+                        <a href="./pages/contact-us/contact-us.html">Contact With Us</a>
+                    </p>
+                </div>
+                <div class="right d-none d-lg-flex align-items-center gap-3">
+                    <div class="cal d-flex align-items-center gap-2">
+                        <i class="bi bi-telephone-fill"></i>
+                        <p href="#">Call us: +990 123 456 789</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="mail d-flex align-items-center gap-2">
+                        <i class="bi bi-envelope-fill"></i>
+                        <p>Send mail: brickzconstruction@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header data-aos="flip-up">
+            <nav class="navbar navbar-expand-xl py-3 py-xl-0">
+                <div class="container-fluid d-flex align-items-center justify-content-between">
+                    <img src="./layouts/images/header-logo.png" alt="logo-img">
+                    <button class="navbar-toggler collapsed d-flex d-xl-none align-items-center justify-content-center"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i
+                            class="menu-icon fa-solid fa-bars-staggered animate__animated animate__flipInX animate__faster"></i>
+                        <i class="x-icon fa-solid fa-x animate__animated animate__flipInX animate__faster"></i>
+                    </button>
+                    <div class="collapse navbar-collapse d-xl-flex justify-content-lg-end justify-content-xl-center align-items-center gap-4 gap-xxl-5 text-center"
+                        id="navbarNav">
+                        <a class="nav-link" aria-current="page" href="#">
+                            <div class="link active">
+                                Home
+                            </div>
+                        </a>
+                        <a class="nav-link" href="./pages/about-us/index.html">
+                            <div class="link">
+                                About
+                            </div>
+                        </a>
+                        <div class="mul-links">
+                            <a class="nav-link link-trigger d-flex align-items-center justify-content-center gap-1"
+                                href="./pages/services/index.html">
+                                Services
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <div class="link-fixed-box position-absolute top-100 shadow-lg px-3">
+                                <a class="nav-link " href="./pages/services/service-details/index.html">
+                                    <div class="link">
+                                        Services
+                                    </div>
+                                </a>
+                                <a class="nav-link " href="./pages/services/service-details/index.html">
+                                    <div class="link">
+                                        Details
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="mul-links">
+                            <a class="nav-link link-trigger d-flex align-items-center justify-content-center gap-1"
+                                href="./pages/projects/index.html">
+                                Project
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <div class="link-fixed-box position-absolute top-100 shadow-lg px-3">
+                                <a class="nav-link" href="./pages/projects/project-details/index.html">
+                                    <div class="link">
+                                        Projects
+                                    </div>
+                                </a>
+                                <a class="nav-link" href="./pages/projects/project-details/index.html">
+                                    <div class="link">
+                                        Details
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <a class="nav-link" href="./pages/pricing/index.html">
+                            <div class="link">
+                                Pricing
+                            </div>
+                        </a>
+                        <div class="mul-links">
+                            <a class="nav-link link-trigger d-flex align-items-center justify-content-center gap-1"
+                                href="./pages/blog/index.html">
+                                Blog
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <div class="link-fixed-box position-absolute top-100 shadow-lg px-3">
+                                <a class="nav-link" href="./pages/blog/blog-details/index.html">
+                                    <div class="link">
+                                        Blog
+                                    </div>
+                                </a>
+                                <a class="nav-link" href="./pages/blog/blog-details/index.html">
+                                    <div class="link">
+                                        Details
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <a class="nav-link" href="./pages/contact-us/index.html">
+                            <div class="link">Contact</div>
+                        </a>
+                    </div>
+                    <div class="icons d-none d-xl-flex align-items-center gap-3">
+                        <div class="icon-wrapper d-flex justify-content-center align-items-center rounded-circle">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="icon-wrapper d-flex justify-content-center align-items-center rounded-circle">
+                            <i class="fa-solid fa-bars-staggered"></i>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--TODO>> Hero section -->
+        <section id="home-hero-sec" class="animate__animated animate__zoomIn">
+            <div class="container">
+                <p class="sub-title head">Affordable Effective Reliable</p>
+                <h1 class="head-text ml12">
+                    Construction Solutions For Every Industry
+                </h1>
+                <div class="divider"></div>
+                <p class="des text-white ml10">
+                    We believe that every business is uniquids our approach is never one size fits all We tailor our
+                    strategies to fit your goals hub.
+                </p>
+                <button class="btn animate__animated animate__fadeInUp">
+                    <div class="text">
+                        <span>Discover more</span>
+                    </div>
+                    <div class="icon">
+                        <i class="pri-icon fa-solid fa-arrow-right"></i>
+                        <i class="sec-icon fa-solid fa-arrow-right"></i>
+                    </div>
+                </button>
+            </div>
+        </section>
+
+        <!--TODO>> Project section -->
+        <section id="project">
+            <div class="container d-flex flex-column flex-lg-row gap-4">
+                <div class="left col-12 col-lg-6 col-xxl-4 flex-shrink-1 d-flex flex-column flex-md-row align-items-center gap-3 p-3 rounded-3"
+                    data-aos="zoom-out">
+                    <img class="rounded-3" src="./images/project/about-r.jpg" alt="about-img">
+                    <div class="content">
+                        <h3 class="card-title text-white mb-3 ml12">Project Management</h3>
+                        <p class="des text-white mb-3">
+                            We provide best services ensuring your outstanding growth lorem.
+                        </p>
+                        <p class="des fw-semibold text-white">Build & Solutions</p>
+                        <ul class="list-unstyled d-flex flex-column gap-3">
+                            <li class="d-flex align-items-center gap-3">
+                                <div class="check-icon d-flex align-items-center justify-content-center">
+                                    <img src="./images/project/check-icon.png" alt="">
+                                </div>
+                                <p class="des fw-medium text-white">Quality Control System</p>
+                            </li>
+                            <li class="d-flex align-items-center gap-3">
+                                <div class="check-icon d-flex align-items-center justify-content-center">
+                                    <img src="./images/project/check-icon.png" alt="">
+                                </div>
+                                <p class="des fw-medium text-white">Building Quality Industrial</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mid d-flex flex-column justify-content-between gap-3 col-12 col-lg-6 col-xxl-4 flex-shrink-1 rounded-3"
+                    data-aos="zoom-out">
+                    <h3 class="card-title ml12">
+                        Have a Project in Mind?
+                    </h3>
+                    <form class="d-flex flex-column gap-3 gap-md-4">
+                        <div class="d-flex flex-column flex-md-row gap-3 gap-md-4">
+                            <input class="form-control py-3 px-4 rounded-5 col-12 col-md-6 flex-shrink-1" required
+                                placeholder="Your Name" type="text">
+                            <input class="form-control py-3 px-4 rounded-5 col-12 col-md-6 flex-shrink-1" required
+                                placeholder="Email Address" type="email">
+                        </div>
+                        <select class="form-select py-3 px-4 rounded-5">
+                            <option class="d-none">You Services</option>
+                            <option>Design & Build</option>
+                            <option>Project Management</option>
+                            <option>Renovation & Remodeling</option>
+                            <option>Structural Engineering</option>
+                            <option>Finishing Works</option>
+                        </select>
+                        <button class="submit-btn p-3 rounded-5 border-0 text-white">Submit Request</button>
+                    </form>
+                </div>
+                <div class="right col-12 col-lg-6 col-xxl-4 flex-shrink-1 d-flex justify-content-end align-items-end d-lg-none d-xxl-flex rounded-3"
+                    data-aos="zoom-out">
+                    <div class="ex-counter py-3 px-3 px-sm-4 px-md-5 d-flex flex-column align-items-center">
+                        <h5 class="odometer text-white" data-count="25">0</h5>
+                        <h6 class="text-white">Years Of Experience</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--TODO>> Work section -->
+        <section id="work">
+            <div class="container d-flex flex-column flex-lg-row">
+                <div class="left d-flex flex-column align-items-start gap-3 col-12 col-lg-6 flex-shrink-1">
+                    <p class="sub-title">Work Strategy</p>
+                    <h2 class="title ml12">Building The Future With Strength & Precision</h2>
+                    <p class="des">
+                        We provide the best services, ensuring your outstanding growth ipsum dolor sit amet. Nulla
+                        ultrices
+                        vitae
+                        neque non sodales.
+                    </p>
+                    <button class="btn dark animate__animated animate__fadeInUp">
+                        <div class="text">
+                            <span>Start Your Project</span>
+                        </div>
+                        <div class="icon">
+                            <i class="pri-icon fa-solid fa-arrow-right"></i>
+                            <i class="sec-icon fa-solid fa-arrow-right"></i>
+                        </div>
+                    </button>
+                </div>
+                <div class="right img-animate-wrapper col-12 col-lg-6 flex-shrink-1 rounded-3">
+                    <img src="./images/work.jpg" alt="work-sec-img" class="rounded-3">
+                </div>
+            </div>
+        </section>
+
+        <!--TODO>> About section -->
+        <section id="about">
+            <div class="container d-flex flex-column flex-xl-row">
+                <div class="left-img col-12 col-md-10 col-lg-8 col-xl-5">
+                    <div class="img-animate-wrapper">
+                        <img src="./images/about/about-hr-img0011.jpg" alt="about-img">
+                    </div>
+                    <div class="skill-details">
+                        <h3 class="card-title ml12">Working Skill</h3>
+                        <p>Core Construction</p>
+                        <div class="progress-container mb-12">
+                            <div class="progress-bar"></div>
+                            <span id="percent">0%</span>
+                        </div>
+                        <p>Technical & Trade</p>
+                        <div class="progress-container2">
+                            <div class="progress-bar2"></div>
+                            <span id="percent2">0%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-content col-12 col-xl-7">
+                    <p class="sub-title">About Brickz</p>
+                    <h2 class="title">Trusted Construction Solutions Since 1995</h2>
+                    <p class="des">
+                        We are a team of career experts, resume writers, and HR professionals dedicated to creating CVs
+                        that help you stand out and secure your job.
+                    </p>
+                    <ul class="list-unstyled">
+                        <li>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!------------------------------------------------------------------------------------------------------>
+    <!--? Libraries -->
+    <!------------------------------------------------------------------------------------------------------>
+    <!--TODO>> animeJS cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <!--TODO>> Aos cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!--TODO>> Wow.js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!--TODO>> Swiper.js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!--TODO>> Bootstrap cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <!--TODO>> Odometer cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js"></script>
+    <!--? External file -->
+    <script src="./index.js"></script>
+</body>
+
+</html>
