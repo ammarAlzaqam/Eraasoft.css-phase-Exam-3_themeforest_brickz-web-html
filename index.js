@@ -244,12 +244,12 @@ document.addEventListener("DOMContentLoaded", function () {
   //! =====Scroll (lenis) =====
   const isMobile = matchMedia("(pointer: coarse)").matches;
 
-  if (isMobile) {
+  if (innerWidth <= 991) {
     document.querySelector("body").innerHTML +=
       "<h1 class='head-title'>This is touch screen device</h1>";
   }
 
-  if (!isMobile) {
+  if (innerWidth > 991) {
     const lenis = new Lenis({
       duration: 0.7,
       easing: (t) => 1 - Math.pow(1 - t, 2),
