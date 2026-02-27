@@ -54,6 +54,12 @@
 body {
   background-color: white;
   overflow-x: hidden;
+  overflow-y: visible;
+}
+
+section {
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 h1,

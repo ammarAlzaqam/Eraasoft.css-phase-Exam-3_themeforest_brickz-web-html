@@ -242,20 +242,24 @@ document.addEventListener("DOMContentLoaded", function () {
   ProgressObserver2.observe(container2);
 
   //! =====Scroll (lenis) =====
-  const lenis = new Lenis({
-    duration: 0.7,
-    easing: (t) => 1 - Math.pow(1 - t, 2),
-    smoothWheel: true,
-    wheelMultiplier: 1.1,
-    touchMultiplier: 1,
-  });
+  const isMobile = matchMedia("(pointer: coarse)").matches;
 
-  function raf(time) {
-    lenis.raf(time);
+  if (!isMobile) {
+    const lenis = new Lenis({
+      duration: 0.7,
+      easing: (t) => 1 - Math.pow(1 - t, 2),
+      smoothWheel: true,
+      wheelMultiplier: 1.1,
+      touchMultiplier: 1,
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
     requestAnimationFrame(raf);
   }
-
-  requestAnimationFrame(raf);
 
   //! reset video modal
   const modal = document.getElementById("videoModal");
