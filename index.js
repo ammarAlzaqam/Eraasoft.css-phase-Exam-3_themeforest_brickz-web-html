@@ -244,6 +244,11 @@ document.addEventListener("DOMContentLoaded", function () {
   //! =====Scroll (lenis) =====
   const isMobile = matchMedia("(pointer: coarse)").matches;
 
+  if (isMobile) {
+    document.querySelector("body").innerHTML +=
+      "<h1 class='head-title'>This is touch screen device</h1>";
+  }
+
   if (!isMobile) {
     const lenis = new Lenis({
       duration: 0.7,
