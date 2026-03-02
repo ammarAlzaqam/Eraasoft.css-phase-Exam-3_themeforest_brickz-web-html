@@ -16,6 +16,10 @@
 
       .img-animate-wrapper {
         aspect-ratio: 27/26;
+
+        @media (min-width: 1200px) and (max-width: 1399px) {
+          aspect-ratio: 5/6;
+        }
       }
 
       .skill-details {
@@ -98,7 +102,7 @@
 
     .right-content {
       background-color: rgb(246, 246, 246);
-      padding: 60px 60px 60px 80px;
+      padding: 50px 45px 50px 70px;
       border-top-right-radius: 6px;
       border-bottom-right-radius: 6px;
 

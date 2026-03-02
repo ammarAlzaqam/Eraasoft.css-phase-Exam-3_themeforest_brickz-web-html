@@ -39,7 +39,7 @@
 
     <div class="main">
         <!--TODO>> Header -->
-        <div data-aos="zoom-in" class="cta-top-sec">
+        <div data-aos="fade-in" class="cta-top-sec">
             <div class="container d-flex align-items-center justify-content-center justify-content-lg-between">
                 <div class="left d-flex align-items-center gap-2">
                     <div class="arrow-icon-wrapper d-flex align-items-center justify-content-center">
@@ -167,7 +167,7 @@
             </nav>
         </header>
 
-        <!--TODO>> Hero section -->
+        <!--TODO>> 1-Hero section -->
         <section id="home-hero-sec" class="animate__animated animate__zoomIn">
             <div class="container">
                 <p class="sub-title head">Affordable Effective Reliable</p>
@@ -179,19 +179,11 @@
                     We believe that every business is uniquids our approach is never one size fits all We tailor our
                     strategies to fit your goals hub.
                 </p>
-                <button class="btn animate__animated animate__fadeInUp">
-                    <div class="text">
-                        <span>Discover more</span>
-                    </div>
-                    <div class="icon">
-                        <i class="pri-icon fa-solid fa-arrow-right"></i>
-                        <i class="sec-icon fa-solid fa-arrow-right"></i>
-                    </div>
-                </button>
+                <button class="btn animate__animated animate__fadeInUp" content-text="Discover More"></button>
             </div>
         </section>
 
-        <!--TODO>> Project section -->
+        <!--TODO>> 2-Project section -->
         <section id="project">
             <div class="container d-flex flex-column flex-lg-row gap-4">
                 <div class="left col-12 col-lg-6 col-xxl-4 flex-shrink-1 d-flex flex-column flex-md-row align-items-center gap-3 p-3 rounded-3"
@@ -252,7 +244,7 @@
             </div>
         </section>
 
-        <!--TODO>> Work section -->
+        <!--TODO>> 3-Work section -->
         <section id="work">
             <div class="container d-flex flex-column flex-lg-row">
                 <div class="left d-flex flex-column align-items-start gap-3 col-12 col-lg-6 flex-shrink-1">
@@ -264,15 +256,7 @@
                         vitae
                         neque non sodales.
                     </p>
-                    <button class="btn dark animate__animated animate__fadeInUp">
-                        <div class="text">
-                            <span>Start Your Project</span>
-                        </div>
-                        <div class="icon">
-                            <i class="pri-icon fa-solid fa-arrow-right"></i>
-                            <i class="sec-icon fa-solid fa-arrow-right"></i>
-                        </div>
-                    </button>
+                    <button class="btn dark" content-text="Start Your Project"></button>
                 </div>
                 <div class="right img-animate-wrapper col-12 col-lg-6 flex-shrink-1 rounded-3">
                     <img src="./images/work.jpg" alt="work-sec-img" class="rounded-3">
@@ -280,7 +264,7 @@
             </div>
         </section>
 
-        <!--TODO>> About section -->
+        <!--TODO>> 4-About section -->
         <section id="about">
             <div class="container d-flex flex-column-reverse flex-xl-row gap-3 gap-xl-0">
                 <div class="left-img col-12 col-md-10 col-lg-8 col-xl-5">
@@ -301,14 +285,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="right-content col-12 col-xl-7 d-flex flex-column gap-3">
+                <div class="right-content col-12 col-xl-7 d-flex flex-column align-items-start gap-3">
                     <p class="sub-title">About Brickz</p>
                     <h2 class="title mb-1">Trusted Construction Solutions Since 1995</h2>
                     <p class="des">
                         We are a team of career experts, resume writers, and HR professionals dedicated to creating CVs
                         that help you stand out and secure your job.
                     </p>
-                    <ul class="list-unstyled d-flex flex-wrap row-gap-3">
+                    <ul class="list-unstyled d-flex flex-wrap row-gap-3 w-100">
                         <li class="col-12 col-md-6 d-flex align-items-center gap-2">
                             <div
                                 class="check-icon-wrapper rounded-circle d-flex justify-content-center align-items-center">
@@ -338,11 +322,12 @@
                             <span class="des">Professional CV Experts</span>
                         </li>
                     </ul>
+                    <button class="btn dark" content-text="Read More Now"></button>
                 </div>
             </div>
         </section>
 
-        <!--TODO>> video section -->
+        <!--TODO>> 5-Video section -->
         <section id="video" class="d-flex align-items-center justify-content-center">
             <button class="play-icon-wrapper rounded-circle d-flex justify-content-center align-items-center"
                 data-bs-toggle="modal" data-bs-target="#videoModal">
@@ -375,8 +360,287 @@
             </div>
         </section>
 
-        <!--TODO>> video section -->
+        <!--TODO>> 6-Services section -->
+        <section id="services" class="overflow-visible">
+            <div class="container">
+                <div class="head text-center mb-4 d-flex flex-column align-items-center gap-3">
+                    <p class="subtitle">Our Services</p>
+                    <h2 class="title">Innovative Building Solutions</h2>
+                    <p class="des">Optimized CVs that pass Applicant Tracking Systems and reach recruiters.</p>
+                </div>
+                <div class="boxes-wrapper">
+                    <div class="box">
+                        <a class="d-flex flex-column flex-md-row gap-4"
+                            href="./pages/services/service-details/index.html">
+                            <div class="left col-12 col-md-7 col-xl-6 flex-shrink-1">
+                                <span class="count">01</span>
+                                <h3>Core Construction</h3>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M24 8V6.66L7.184 0H6.459L0 6.8V8H5V23H0V24H16V23H11V8H21V16.04C21 16.957 21.463 17.776 22.209 18.178C22.697 18.44 23 18.947 23 19.5C23 20.327 22.327 21 21.5 21C20.673 21 20 20.327 20 19.5H19C19 20.878 20.121 22 21.5 22C22.879 22 24 20.878 24 19.5C24 18.579 23.495 17.734 22.684 17.297C22.269 17.074 22 16.58 22 16.04V8H24ZM6.889 1L22.136 7H1.189L6.889 1ZM10 21.793L6.207 18L10 14.207V21.793ZM6 16.793V9.207L9.793 13L6 16.793ZM6 19.207L9.793 23H6V19.207ZM10 11.793L6.207 8H10V11.793Z">
+                                    </path>
+                                    </path>
+                                </svg>
+                                <p class="des text-white">
+                                    Believe a strong resume is the first toward a successful career Our
+                                    mission is to help job seekers present their skills, experience, and
+                                    achievements with confidence.
+                                </p>
+                                <button class="btn mt-4" content-text="Explore More"></button>
+                            </div>
+                            <div class="right col-12 col-md-5 col-xl-6 flex-shrink-1">
+                                <img class="w-100" src="./images/services/service1.jpg" alt="service1-img">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a class="d-flex flex-column flex-md-row gap-4"
+                            href="./pages/services/service-details/index.html">
+                            <div class="left col-12 col-md-7 col-xl-6 flex-shrink-1">
+                                <span class="count">02</span>
+                                <h3>Structural & Civil Works</h3>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M1.97186 7H2.98286L2.98486 8C2.98486 11.309 5.67586 14 8.98486 14C12.2939 14 14.9849 11.309 14.9849 7.999L14.9829 7H15.9709C16.2469 7 16.4709 6.776 16.4709 6.5C16.4709 6.224 16.2469 6 15.9709 6H14.9809V5.49C14.9749 2.463 12.5069 0 9.47986 0H8.47986C7.00886 0 5.62686 0.573 4.58786 1.614C3.54786 2.655 2.97686 4.038 2.97986 5.51V6H1.97186C1.69586 6 1.47186 6.224 1.47186 6.5C1.47186 6.776 1.69586 7 1.97186 7ZM13.9849 8C13.9849 10.757 11.7419 13 8.98486 13C6.22786 13 3.98486 10.757 3.98486 7.999L3.98286 7H13.9829L13.9849 8ZM3.97986 5.508C3.97786 4.305 4.44486 3.172 5.29586 2.32C5.77586 1.839 6.35086 1.496 6.97186 1.275V4C6.97186 4.276 7.19586 4.5 7.47186 4.5C7.74786 4.5 7.97186 4.276 7.97186 4V1.05C8.14086 1.031 8.30786 1 8.47986 1H9.47986C9.64786 1 9.80786 1.032 9.97186 1.05V4C9.97186 4.276 10.1959 4.5 10.4719 4.5C10.7479 4.5 10.9719 4.276 10.9719 4V1.274C12.7159 1.893 13.9769 3.541 13.9799 5.492V6H3.98086L3.97986 5.508ZM12.2929 16.714C11.2519 16.24 10.1389 16 8.98486 16C4.75186 16 1.24386 19.307 0.998857 23.529C0.983857 23.795 0.762857 24 0.499857 24C0.489857 24 0.479857 24 0.470857 24C0.194857 23.984 -0.0151432 23.748 0.000856791 23.472C0.275857 18.722 4.22286 15.001 8.98486 15.001C10.2829 15.001 11.5349 15.272 12.7069 15.805C12.9579 15.919 13.0689 16.216 12.9549 16.467C12.8409 16.719 12.5449 16.827 12.2929 16.714ZM22.4999 14H18.4999C17.6729 14 16.9999 14.673 16.9999 15.5V17H15.4999C14.6729 17 13.9999 17.673 13.9999 18.5V20H12.4999C11.6729 20 10.9999 20.673 10.9999 21.5V22.5C10.9999 23.327 11.6729 24 12.4999 24H22.4999C23.3269 24 23.9999 23.327 23.9999 22.5V15.5C23.9999 14.673 23.3269 14 22.4999 14ZM22.9999 18V20H20.9999V18H22.9999ZM17.9999 15.5C17.9999 15.225 18.2249 15 18.4999 15H22.4999C22.7749 15 22.9999 15.225 22.9999 15.5V17H17.9999V15.5ZM14.9999 18.5C14.9999 18.225 15.2249 18 15.4999 18H19.9999V20H14.9999V18.5ZM11.9999 22.5V21.5C11.9999 21.225 12.2239 21 12.4999 21H16.9999V23H12.4999C12.2239 23 11.9999 22.775 11.9999 22.5ZM22.9999 22.5C22.9999 22.775 22.7749 23 22.4999 23H17.9999V21H22.9999V22.5Z">
+                                    </path>
+                                    </path>
+                                </svg>
+                                <p class="des text-white">
+                                    Believe a strong resume is the first toward a successful career Our
+                                    mission is to help job seekers present their skills, experience, and
+                                    achievements with confidence.
+                                </p>
+                                <button class="btn mt-4" content-text="Explore More"></button>
 
+
+                            </div>
+                            <div class="right col-12 col-md-5 col-xl-6 flex-shrink-1">
+                                <img class="w-100" src="./images/services/service2.jpg" alt="service1-img">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a class="d-flex flex-column flex-md-row gap-4"
+                            href="./pages/services/service-details/index.html">
+                            <div class="left col-12 col-md-7 col-xl-6 flex-shrink-1">
+                                <span class="count">03</span>
+                                <h3>Finishing Services</h3>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M24 16.4985C24 16.7745 23.776 16.9985 23.5 16.9985C23.443 16.9985 23.378 16.9895 23.318 16.9855L22.868 20.1355C22.553 22.3385 20.638 23.9985 18.413 23.9985H17.654C17.378 23.9985 17.154 23.7745 17.154 23.4985C17.154 23.2225 17.378 22.9985 17.654 22.9985H18.413C20.143 22.9985 21.633 21.7065 21.878 19.9935L22.336 16.7895C20.191 16.1245 17.135 13.8205 16.118 9.9985H12.382C11.802 9.9985 11.251 10.2495 10.871 10.6885C10.426 11.1885 10.3 11.8745 10.436 12.5195C10.475 12.7925 10.285 13.0455 10.011 13.0845C9.735 13.1225 9.485 12.9335 9.446 12.6595C9.261 11.7285 9.484 10.7515 10.116 10.0335C10.686 9.3755 11.512 8.9985 12.382 8.9985H21C21.87 8.9985 22.695 9.3755 23.266 10.0325C23.836 10.6905 24.093 11.5615 23.97 12.4225L23.806 13.5685C23.768 13.8435 23.507 14.0325 23.24 13.9925C22.968 13.9535 22.777 13.7005 22.816 13.4265L22.98 12.2805C23.062 11.7065 22.891 11.1255 22.51 10.6875C22.13 10.2495 21.58 9.9985 21 9.9985H17.154C18.344 13.9565 22.064 15.9985 23.5 15.9985C23.776 15.9985 24 16.2225 24 16.4985ZM7 21.4985V22.4985C7 23.3255 6.327 23.9985 5.5 23.9985H1.5C0.673 23.9985 0 23.3255 0 22.4985V21.4985C0 20.6715 0.673 19.9985 1.5 19.9985H5.5C6.327 19.9985 7 20.6715 7 21.4985ZM6 21.4985C6 21.2225 5.776 20.9985 5.5 20.9985H1.5C1.224 20.9985 1 21.2225 1 21.4985V22.4985C1 22.7745 1.224 22.9985 1.5 22.9985H5.5C5.776 22.9985 6 22.7745 6 22.4985V21.4985ZM15 21.4985V22.4985C15 23.3255 14.327 23.9985 13.5 23.9985H9.5C8.673 23.9985 8 23.3255 8 22.4985V21.4985C8 20.6715 8.673 19.9985 9.5 19.9985H13.5C14.327 19.9985 15 20.6715 15 21.4985ZM14 21.4985C14 21.2225 13.775 20.9985 13.5 20.9985H9.5C9.224 20.9985 9 21.2225 9 21.4985V22.4985C9 22.7745 9.224 22.9985 9.5 22.9985H13.5C13.775 22.9985 14 22.7745 14 22.4985V21.4985ZM5.5 14.9985H9.5C10.327 14.9985 11 15.6715 11 16.4985V17.4985C11 18.3255 10.327 18.9985 9.5 18.9985H5.5C4.673 18.9985 4 18.3255 4 17.4985V16.4985C4 15.6715 4.673 14.9985 5.5 14.9985ZM5 17.4985C5 17.7745 5.224 17.9985 5.5 17.9985H9.5C9.776 17.9985 10 17.7745 10 17.4985V16.4985C10 16.2225 9.776 15.9985 9.5 15.9985H5.5C5.224 15.9985 5 16.2225 5 16.4985V17.4985ZM1.658 17.9985H1.692C1.967 17.9795 2.176 17.7425 2.158 17.4665C2.054 15.8865 2 14.2155 2 12.4995C2 8.5355 2.285 5.5765 2.523 3.7925C2.711 2.3895 3.828 1.3295 5.242 1.2155C8.777 0.9295 12.222 0.9295 15.757 1.2155C17.17 1.3295 18.289 2.3945 18.478 3.8035C18.592 4.6595 18.69 5.5805 18.769 6.5395C18.791 6.8155 19.039 7.0185 19.308 6.9975C19.583 6.9745 19.787 6.7335 19.765 6.4585C19.685 5.4815 19.585 4.5435 19.469 3.6705C19.218 1.7905 17.725 0.3705 15.837 0.2175C12.25 -0.0725 8.75 -0.0725 5.162 0.2175C3.275 0.3705 1.782 1.7855 1.532 3.6595C1.289 5.4735 1 8.4795 1 12.4985C1 14.2365 1.054 15.9295 1.16 17.5315C1.178 17.7955 1.397 17.9985 1.659 17.9985H1.658Z">
+                                    </path>
+                                </svg>
+                                <p class="des text-white">
+                                    Believe a strong resume is the first toward a successful career Our
+                                    mission is to help job seekers present their skills, experience, and
+                                    achievements with confidence.
+                                </p>
+                                <button class="btn mt-4" content-text="Explore More"></button>
+
+
+                            </div>
+                            <div class="right col-12 col-md-5 col-xl-6 flex-shrink-1">
+                                <img class="w-100" src="./images/services/service3.png" alt="service1-img">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a class="d-flex flex-column flex-md-row gap-4"
+                            href="./pages/services/service-details/index.html">
+                            <div class="left col-12 col-md-7 col-xl-6 flex-shrink-1">
+                                <span class="count">04</span>
+                                <h3>Project Management</h3>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24" fill="none">
+                                    <path
+                                        d="M22.537 10.2831H14.537C13.71 10.2831 13.037 10.9561 13.037 11.7831V16.2831H1.537C0.71 16.2831 0.037 16.9561 0.037 17.7831V19.2831C0.037 21.4891 1.831 23.2831 4.037 23.2831H20.037C22.243 23.2831 24.037 21.4891 24.037 19.2831V11.7831C24.037 10.9561 23.364 10.2831 22.537 10.2831ZM14.037 11.7831C14.037 11.5071 14.262 11.2831 14.537 11.2831H22.537C22.812 11.2831 23.037 11.5071 23.037 11.7831V16.2831H14.037V11.7831ZM16.037 17.2831V22.2831H8.037V17.2831H16.037ZM1.037 19.2831V17.7831C1.037 17.5071 1.261 17.2831 1.537 17.2831H7.037V22.2831H4.037C2.383 22.2831 1.037 20.9371 1.037 19.2831ZM23.037 19.2831C23.037 20.9371 21.691 22.2831 20.037 22.2831H17.037V17.2831H23.037V19.2831ZM1.11 7.07207L7.147 10.3431C7.502 10.4961 7.877 10.5721 8.251 10.5721C8.787 10.5721 9.319 10.4171 9.782 10.1121C10.568 9.59507 11.037 8.72507 11.037 7.78407V5.78407H13.1C13.323 6.64607 14.107 7.28407 15.037 7.28407H20.037C21.14 7.28407 22.037 6.38707 22.037 5.28407C22.037 4.18107 21.14 3.28407 20.037 3.28407H15.037C14.107 3.28407 13.323 3.92207 13.1 4.78407H11.037V2.78407C11.037 1.84307 10.568 0.973068 9.782 0.456068C8.996 -0.0609317 8.012 -0.147932 7.106 0.244068L1.117 3.49107C0.428 3.83907 0 4.52607 0 5.28307C0 6.04007 0.425 6.72207 1.11 7.07207ZM15.037 4.28307H20.037C20.589 4.28307 21.037 4.73207 21.037 5.28307C21.037 5.83407 20.589 6.28307 20.037 6.28307H15.037C14.485 6.28307 14.037 5.83407 14.037 5.28307C14.037 4.73207 14.485 4.28307 15.037 4.28307ZM1.581 4.37607L7.542 1.14107C7.774 1.04107 8.015 0.992068 8.254 0.992068C8.595 0.992068 8.931 1.09307 9.232 1.29007C9.743 1.62707 10.037 2.17107 10.037 2.78307V7.78307C10.037 8.39507 9.744 8.93907 9.232 9.27607C8.72 9.61207 8.104 9.66507 7.583 9.44407L1.581 6.19007C1.581 6.19007 1.573 6.18607 1.569 6.18307C1.213 6.00307 1 5.66607 1 5.28307C1 4.90007 1.212 4.56307 1.581 4.37607Z">
+                                    </path>
+                                </svg>
+                                <p class="des text-white">
+                                    Believe a strong resume is the first toward a successful career Our
+                                    mission is to help job seekers present their skills, experience, and
+                                    achievements with confidence.
+                                </p>
+                                <button class="btn mt-4" content-text="Explore More"></button>
+
+
+                            </div>
+                            <div class="right col-12 col-md-5 col-xl-6 flex-shrink-1">
+                                <img class="w-100" src="./images/services/service4.jpg" alt="service1-img">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--TODO>> 7-Industries section -->
+        <section id="industries">
+            <div class="container d-flex flex-column flex-lg-row">
+                <div class="left flex-shrink-0 col-12 col-lg-4 d-flex flex-column align-items-start gap-3">
+                    <p class="subtitle text-white">Industries we serve</p>
+                    <h2 class="title text-white">Industries Shaped by Our Work</h2>
+                    <p class="des text-white">Find answers to our question about our consulting coverage neque sodales
+                        best options.</p>
+                    <button class="btn mt-4 sharp" content-text="Discover More"></button>
+                </div>
+                <div class="right flex-shrink-1 col-12 col-lg-8 d-flex flex-column flex-md-row column-gap-5">
+                    <div class="part1 col-12 col-md-6 flex-shrink-1">
+                        <a href="#" class="box d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center gap-4">
+                                <img src="./images/industries/industry_01.jpg" alt="industry-img">
+                                <h3>Residential</h3>
+                            </div>
+                            <div class="position-relative overflow-hidden arrows">
+                                <svg class="main-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 17">
+                                    <path
+                                        d="M13.338 5.04405L1.88204 16.5L0 14.618L11.4546 3.16201H1.35896V0.5H16V15.141H13.338V5.04405Z">
+                                    </path>
+                                </svg>
+                                <svg class="side-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 17">
+                                    <path
+                                        d="M13.338 5.04405L1.88204 16.5L0 14.618L11.4546 3.16201H1.35896V0.5H16V15.141H13.338V5.04405Z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="#" class="box d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center gap-4">
+                                <img src="./images/industries/industry_02.jpg" alt="industry-img">
+                                <h3>Industrial</h3>
+                            </div>
+                            <div class="position-relative overflow-hidden arrows">
+                                <svg class="main-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 17">
+                                    <path
+                                        d="M13.338 5.04405L1.88204 16.5L0 14.618L11.4546 3.16201H1.35896V0.5H16V15.141H13.338V5.04405Z">
+                                    </path>
+                                </svg>
+                                <svg class="side-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 17">
+                                    <path
+                                        d="M13.338 5.04405L1.88204 16.5L0 14.618L11.4546 3.16201H1.35896V0.5H16V15.141H13.338V5.04405Z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="#" class="box d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center gap-4">
+                                <img src="./images/industries/industry_03.jpg" alt="industry-img">
+                                <h3>Public Sector</h3>
+                            </div>
+                            <div class="position-relative overflow-hidden arrows">
+                                <svg class="main-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 17">
+                                    <path
+                                        d="M13.338 5.04405L1.88204 16.5L0 14.618L11.4546 3.16201H1.35896V0.5H16V15.141H13.338V5.04405Z">
+                                    </path>
+                                </svg>
+                                <svg class="side-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 17">
+                                    <path
+                                        d="M13.338 5.04405L1.88204 16.5L0 14.618L11.4546 3.16201H1.35896V0.5H16V15.141H13.338V5.04405Z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="part2 col-12 col-md-6 flex-shrink-1">
+                        <a href="#" class="box d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center gap-4">
+                                <img src="./images/industries/industry_04.jpg" alt="industry-img">
+                                <h3>Commercial</h3>
+                            </div>
+                            <div class="position-relative overflow-hidden arrows">
+                                <svg class="main-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 17">
+                                    <path
+                                        d="M13.338 5.04405L1.88204 16.5L0 14.618L11.4546 3.16201H1.35896V0.5H16V15.141H13.338V5.04405Z">
+                                    </path>
+                                </svg>
+                                <svg class="side-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 17">
+                                    <path
+                                        d="M13.338 5.04405L1.88204 16.5L0 14.618L11.4546 3.16201H1.35896V0.5H16V15.141H13.338V5.04405Z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="#" class="box d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center gap-4">
+                                <img src="./images/industries/industry_05.jpg" alt="industry-img">
+                                <h3>Civil Works</h3>
+                            </div>
+                            <div class="position-relative overflow-hidden arrows">
+                                <svg class="main-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 17">
+                                    <path
+                                        d="M13.338 5.04405L1.88204 16.5L0 14.618L11.4546 3.16201H1.35896V0.5H16V15.141H13.338V5.04405Z">
+                                    </path>
+                                </svg>
+                                <svg class="side-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 17">
+                                    <path
+                                        d="M13.338 5.04405L1.88204 16.5L0 14.618L11.4546 3.16201H1.35896V0.5H16V15.141H13.338V5.04405Z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="#" class="box d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center gap-4">
+                                <img src="./images/industries/industry_06.jpg" alt="industry-img">
+                                <h3>Specialized</h3>
+                            </div>
+                            <div class="position-relative overflow-hidden arrows">
+                                <svg class="main-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 17">
+                                    <path
+                                        d="M13.338 5.04405L1.88204 16.5L0 14.618L11.4546 3.16201H1.35896V0.5H16V15.141H13.338V5.04405Z">
+                                    </path>
+                                </svg>
+                                <svg class="side-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 17">
+                                    <path
+                                        d="M13.338 5.04405L1.88204 16.5L0 14.618L11.4546 3.16201H1.35896V0.5H16V15.141H13.338V5.04405Z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--TODO>> 8-Process section -->
+        <section id="process">
+            <div class="container d-flex align-items-center justify-content-center">
+                <div>
+                    <span>W</span>
+                    <span>O</span>
+                    <span>R</span>
+                    <span>K</span>
+                </div>
+
+                <div>
+                    <span>P</span>
+                    <span>R</span>
+                    <span>O</span>
+                    <span>C</span>
+                    <span>E</span>
+                    <span>S</span>
+                    <span>S</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="steps">
+            <div class="steps d-flex flex-wrap flex-xl-nowrap">
+                <div class="step col-12 col-md-4">
+                    <div class="icon-warpper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="41" viewBox="0 0 24 24">
+                            <path
+                                d="M24 16.4985C24 16.7745 23.776 16.9985 23.5 16.9985C23.443 16.9985 23.378 16.9895 23.318 16.9855L22.868 20.1355C22.553 22.3385 20.638 23.9985 18.413 23.9985H17.654C17.378 23.9985 17.154 23.7745 17.154 23.4985C17.154 23.2225 17.378 22.9985 17.654 22.9985H18.413C20.143 22.9985 21.633 21.7065 21.878 19.9935L22.336 16.7895C20.191 16.1245 17.135 13.8205 16.118 9.9985H12.382C11.802 9.9985 11.251 10.2495 10.871 10.6885C10.426 11.1885 10.3 11.8745 10.436 12.5195C10.475 12.7925 10.285 13.0455 10.011 13.0845C9.735 13.1225 9.485 12.9335 9.446 12.6595C9.261 11.7285 9.484 10.7515 10.116 10.0335C10.686 9.3755 11.512 8.9985 12.382 8.9985H21C21.87 8.9985 22.695 9.3755 23.266 10.0325C23.836 10.6905 24.093 11.5615 23.97 12.4225L23.806 13.5685C23.768 13.8435 23.507 14.0325 23.24 13.9925C22.968 13.9535 22.777 13.7005 22.816 13.4265L22.98 12.2805C23.062 11.7065 22.891 11.1255 22.51 10.6875C22.13 10.2495 21.58 9.9985 21 9.9985H17.154C18.344 13.9565 22.064 15.9985 23.5 15.9985C23.776 15.9985 24 16.2225 24 16.4985ZM7 21.4985V22.4985C7 23.3255 6.327 23.9985 5.5 23.9985H1.5C0.673 23.9985 0 23.3255 0 22.4985V21.4985C0 20.6715 0.673 19.9985 1.5 19.9985H5.5C6.327 19.9985 7 20.6715 7 21.4985ZM6 21.4985C6 21.2225 5.776 20.9985 5.5 20.9985H1.5C1.224 20.9985 1 21.2225 1 21.4985V22.4985C1 22.7745 1.224 22.9985 1.5 22.9985H5.5C5.776 22.9985 6 22.7745 6 22.4985V21.4985ZM15 21.4985V22.4985C15 23.3255 14.327 23.9985 13.5 23.9985H9.5C8.673 23.9985 8 23.3255 8 22.4985V21.4985C8 20.6715 8.673 19.9985 9.5 19.9985H13.5C14.327 19.9985 15 20.6715 15 21.4985ZM14 21.4985C14 21.2225 13.775 20.9985 13.5 20.9985H9.5C9.224 20.9985 9 21.2225 9 21.4985V22.4985C9 22.7745 9.224 22.9985 9.5 22.9985H13.5C13.775 22.9985 14 22.7745 14 22.4985V21.4985ZM5.5 14.9985H9.5C10.327 14.9985 11 15.6715 11 16.4985V17.4985C11 18.3255 10.327 18.9985 9.5 18.9985H5.5C4.673 18.9985 4 18.3255 4 17.4985V16.4985C4 15.6715 4.673 14.9985 5.5 14.9985ZM5 17.4985C5 17.7745 5.224 17.9985 5.5 17.9985H9.5C9.776 17.9985 10 17.7745 10 17.4985V16.4985C10 16.2225 9.776 15.9985 9.5 15.9985H5.5C5.224 15.9985 5 16.2225 5 16.4985V17.4985ZM1.658 17.9985H1.692C1.967 17.9795 2.176 17.7425 2.158 17.4665C2.054 15.8865 2 14.2155 2 12.4995C2 8.5355 2.285 5.5765 2.523 3.7925C2.711 2.3895 3.828 1.3295 5.242 1.2155C8.777 0.9295 12.222 0.9295 15.757 1.2155C17.17 1.3295 18.289 2.3945 18.478 3.8035C18.592 4.6595 18.69 5.5805 18.769 6.5395C18.791 6.8155 19.039 7.0185 19.308 6.9975C19.583 6.9745 19.787 6.7335 19.765 6.4585C19.685 5.4815 19.585 4.5435 19.469 3.6705C19.218 1.7905 17.725 0.3705 15.837 0.2175C12.25 -0.0725 8.75 -0.0725 5.162 0.2175C3.275 0.3705 1.782 1.7855 1.532 3.6595C1.289 5.4735 1 8.4795 1 12.4985C1 14.2365 1.054 15.9295 1.16 17.5315C1.178 17.7955 1.397 17.9985 1.659 17.9985H1.658Z">
+                            </path>
+                            </path>
+                        </svg>
+                    </div>
+                    <h3>Planning & Design</h3>
+                    <div class="divider"></div>
+                    <p class="des">
+                        problem solving, and meaningful expression by encouraging fresh ideas
+                    </p>
+                </div>
+            </div>
+        </section>
     </div>
 
     <!------------------------------------------------------------------------------------------------------>

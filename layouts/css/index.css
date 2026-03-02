@@ -97,6 +97,7 @@ a {
 .ml12 {
   opacity: 0;
   transition: opacity var(--animate-slow);
+
   &.animate {
     opacity: 1;
   }
@@ -140,8 +141,7 @@ a {
 }
 
 .btn {
-  padding-block: 18px;
-  padding-inline: 30px 25px;
+  padding: 16px 32px;
   background-color: var(--accent);
   border-radius: 50px;
   transition: background-color var(--animate-slow);
@@ -158,23 +158,23 @@ a {
     }
 
     .text {
-      span {
+      .main {
         transform: translateY(-150%);
       }
 
-      &::after {
+      .hover {
         transform: translateY(-50%);
       }
     }
 
     .icon {
-      i {
+      svg {
         &.pri-icon {
-          transform: translate(100%, -100%) rotate(-45deg) scale(0.5);
+          transform: translate(100%, -100%) scale(0.5);
         }
 
         &.sec-icon {
-          transform: translate(0, -50%) rotate(-45deg) scale(1);
+          transform: translate(0, -70%) scale(1);
         }
       }
     }
@@ -184,58 +184,80 @@ a {
     position: relative;
     overflow: hidden;
 
-    span {
-      display: block;
+    .main,
+    .hover {
       color: var(--primary);
       font-size: 16px;
       font-weight: 500;
-      line-height: 16px;
+      line-height: 26px;
+    }
+
+    .main {
+      display: block;
       transition: transform var(--animate-slow);
     }
 
-    &::after {
-      content: "Discover more";
+    .hover {
       position: absolute;
       top: 50%;
       left: 0;
       transform: translateY(150%);
       transition: transform var(--animate-slow);
-
-      color: var(--primary);
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 16px;
     }
   }
 
   .icon {
     overflow: hidden;
     position: relative;
-    /* border: 1px solid black; */
     line-height: 16px;
     width: 18px;
-    i {
-      color: var(--primary);
-      transform: rotate(-45deg);
+    svg {
+      width: 12px;
 
-      &.pri-icon {
-        transition: transform var(--animate-slow);
+      path {
+        fill: var(--primary);
       }
+    }
 
-      &.sec-icon {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform: translate(-100%, 100%) rotate(-45deg) scale(0.5);
+    .pri-icon {
+      transition: transform var(--animate-slow);
+    }
+
+    .arrow-wrapper {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      .sec-icon {
+        transform: translate(-100%, 100%) scale(0.5);
         transition: transform var(--animate-slow);
       }
     }
   }
 
   &.dark {
-    .text::after,
-    .icon .sec-icon {
+    .text .hover {
       color: white;
+    }
+
+    .icon .sec-icon path {
+      fill: white;
+    }
+  }
+
+  &.sharp {
+    padding: 19px 30px;
+    border-radius: 5px;
+
+    .text {
+      position: relative;
+      overflow: hidden;
+
+      .main,
+      .hover {
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 17px;
+      }
     }
   }
 }

@@ -266,4 +266,53 @@ document.addEventListener("DOMContentLoaded", function () {
   modal.addEventListener("hidden.bs.modal", () => {
     iframe.src = iframe.src;
   });
+
+  //! Sticky Boxes opacity effect
+  const boxes = document.querySelectorAll(".box");
+
+  function handleStackOpacity() {
+    boxes.forEach((box, index) => {
+      const nextBox = boxes[index + 1];
+
+      if (!nextBox) return;
+
+      const boxRect = box.getBoundingClientRect();
+      const nextRect = nextBox.getBoundingClientRect();
+
+      const overlap = boxRect.bottom - nextRect.top;
+
+      const boxHeight = boxRect.height;
+      const overlapPercent = overlap / boxHeight;
+
+      if (overlapPercent >= 0.8) {
+        box.style.opacity = "0";
+      } else {
+        box.style.opacity = "1";
+      }
+    });
+  }
+
+  window.addEventListener("scroll", handleStackOpacity);
+
+  //! Button Fill auto
+  document.querySelectorAll(".btn[content-text]").forEach((button) => {
+    const text = button.getAttribute("content-text");
+
+    button.innerHTML = `
+    <div class="text">
+      <span class="main">${text}</span>
+      <span class="hover">${text}</span>
+    </div>
+    <div class="icon">
+      <svg class="pri-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 17">
+        <path d="M13.338 5.04405L1.88204 16.5L0 14.618L11.4546 3.16201H1.35896V0.5H16V15.141H13.338V5.04405Z"/>
+      </svg>
+      <div class="arrow-wrapper">
+        <svg class="sec-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 17">
+          <path d="M13.338 5.04405L1.88204 16.5L0 14.618L11.4546 3.16201H1.35896V0.5H16V15.141H13.338V5.04405Z"/>
+        </svg>
+      </div>
+    </div>
+  `;
+  });
 });
