@@ -307,12 +307,27 @@ document.addEventListener("DOMContentLoaded", function () {
       <svg class="pri-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 17">
         <path d="M13.338 5.04405L1.88204 16.5L0 14.618L11.4546 3.16201H1.35896V0.5H16V15.141H13.338V5.04405Z"/>
       </svg>
-      <div class="arrow-wrapper">
-        <svg class="sec-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 17">
-          <path d="M13.338 5.04405L1.88204 16.5L0 14.618L11.4546 3.16201H1.35896V0.5H16V15.141H13.338V5.04405Z"/>
-        </svg>
-      </div>
+      <svg class="sec-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 17">
+        <path d="M13.338 5.04405L1.88204 16.5L0 14.618L11.4546 3.16201H1.35896V0.5H16V15.141H13.338V5.04405Z"/>
+      </svg>
     </div>
   `;
+  });
+
+  //! Team section change img
+  let personDetails = document.querySelectorAll(".person-details");
+  let teamImgs = document.querySelectorAll("#team img");
+  personDetails.forEach((el, i) => {
+    el.addEventListener("mouseenter", () => {
+      personDetails.forEach((el) => el.classList.remove("hovered"));
+      teamImgs.forEach((el) => {
+        el.style.opacity = 0;
+        el.style.transform = "scale(1.1)";
+      });
+
+      el.classList.add("hovered");
+      teamImgs[i].style.opacity = 1;
+      teamImgs[i].style.transform = "scale(1)";
+    });
   });
 });

@@ -1,0 +1,112 @@
+#team {
+  padding-block: 110px;
+  background-color: rgb(246, 246, 246);
+  .container {
+    .bottom-content {
+      .img-wrapper {
+        position: relative;
+        height: 500px;
+        overflow: hidden;
+        border-radius: 7px;
+
+        @media (max-width: 400px) {
+          height: 400px;
+        }
+
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transform: scale(1.1);
+          opacity: 0;
+          transition:
+            transform var(--animate),
+            opacity var(--animate);
+
+          &:first-child {
+            transform: scale(1);
+            opacity: 1;
+          }
+        }
+      }
+
+      .team-details {
+        .person-details {
+          /* &:hover {
+            h3 {
+              color: var(--accent) !important;
+            }
+
+            .icon-wrapper {
+              svg {
+                &.primary-icon {
+                  transform: translate(100%, -100%) scale(1.1);
+                  opacity: 0;
+                }
+
+                &.secondary-icon {
+                  transform: translate(100%, -100%) scale(1);
+                  opacity: 1;
+                }
+              }
+            }
+          } */
+
+          &.hovered {
+            h3 {
+              color: var(--accent) !important;
+            }
+
+            .icon-wrapper {
+              svg {
+                &.primary-icon {
+                  transform: translate(100%, -100%) scale(1.1);
+                  opacity: 0;
+                }
+
+                &.secondary-icon {
+                  transform: translate(100%, -100%) scale(1);
+                  opacity: 1;
+                }
+              }
+            }
+          }
+
+          h3 {
+            font-size: 24px;
+            transition: color var(--animate);
+          }
+
+          .icon-wrapper {
+            position: relative;
+            line-height: 16px;
+            overflow: hidden;
+
+            svg {
+              width: 16px;
+              transition:
+                transform var(--animate),
+                opacity var(--animate);
+
+              &.primary-icon {
+                fill: var(--secondary);
+              }
+
+              &.secondary-icon {
+                fill: var(--accent);
+                position: absolute;
+                bottom: -100%;
+                left: -100%;
+                transform: scale(0.9);
+                opacity: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
