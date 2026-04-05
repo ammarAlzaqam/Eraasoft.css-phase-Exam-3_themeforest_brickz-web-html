@@ -78,11 +78,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  //! ===== WOW Init =====
-  if (typeof WOW !== "undefined") {
-    new WOW().init();
-  }
-
   //! ===== Hover Links Effect =====
   document.querySelectorAll(".link").forEach((link) => {
     link.innerHTML =
@@ -162,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (typeof AOS !== "undefined") {
       AOS.init({
         once: true,
-        duration: 1000,
+        duration: 1500,
       });
     }
   }, 0); // 2000
