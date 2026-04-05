@@ -330,4 +330,49 @@ document.addEventListener("DOMContentLoaded", function () {
       teamImgs[i].style.transform = "scale(1)";
     });
   });
+
+  //! Swiper.js
+  var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+      delay: 4000, // كل 5 ثواني
+      disableOnInteraction: false,
+    },
+
+    speed: 1000, // سرعة الحركة (كل ما تزودها تبقى أبطأ وأنعم)
+  });
+
+  var brandsSwiper = new Swiper(".brandsSwiper", {
+    loop: true,
+    slidesPerView: "auto",
+    spaceBetween: 0,
+    allowTouchMove: true,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+    },
+    speed: 5000,
+    breakpoints: {
+      0: {
+        slidesPerView: 2,
+      },
+      576: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      992: {
+        slidesPerView: 4,
+      },
+      1200: {
+        slidesPerView: 6,
+      },
+    },
+  });
 });

@@ -84,7 +84,8 @@ span,
 button,
 a,
 i,
-ul {
+ul,
+img {
   margin: 0;
   padding: 0;
 }

@@ -1,3 +1,4 @@
+@import url(./swiper.css);
 @import url(./1-hero-sec.css);
 @import url(./2-project.css);
 @import url(./3-work.css);
@@ -9,3 +10,6 @@
 @import url(./9-steps.css);
 @import url(./10-featured.css);
 @import url(./11-team.css);
+@import url(./12-testimonials.css);
+@import url(./13-news.css);
+@import url(./14-footer.css);

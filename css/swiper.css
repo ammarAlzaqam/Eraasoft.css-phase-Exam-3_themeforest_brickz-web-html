@@ -1,0 +1,40 @@
+.swiper {
+  position: relative;
+
+  .swiper-button-next {
+    position: absolute;
+    top: calc(100% - 35px - 22px);
+    right: 40px;
+
+    border: 1px solid silver;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+
+    @media (max-width: 991px) {
+      right: 0;
+    }
+
+    .swiper-navigation-icon {
+      width: 9px !important;
+    }
+  }
+
+  .swiper-button-prev {
+    position: absolute;
+    top: calc(100% - 35px - 22px);
+    left: calc(100% - 84px);
+    transform: translateX(-100%);
+
+    border: 1px solid silver;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+
+    @media (max-width: 991px) {
+      left: calc(100% - 44px);
+    }
+
+    .swiper-navigation-icon {
+      width: 9px !important;
+    }
+  }
+}
