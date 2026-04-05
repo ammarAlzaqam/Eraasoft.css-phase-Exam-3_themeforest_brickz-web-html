@@ -3,7 +3,7 @@
 
 @import url("./header.css");
 @import url("./footer.css");
-/* @import url("./loader.css"); */
+@import url("./loader.css");
 @import url("./hero-sec.css");
 
 :root {

@@ -147,11 +147,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   elements.forEach((el) => observer4.observe(el));
 
-  //! ===== Loader =====
-  // const loader = document.getElementById("loader");
+  //! ===== Loader & AOS =====
+  const loader = document.getElementById("loader");
 
   setTimeout(() => {
-    // loader.classList.add("un-show-loader");
+    loader.classList.add("un-show-loader");
 
     // ===== AOS Init =====
     if (typeof AOS !== "undefined") {
@@ -160,7 +160,7 @@ document.addEventListener("DOMContentLoaded", function () {
         duration: 1500,
       });
     }
-  }, 0); // 2000
+  }, 2000); // 2000
 
   //! ===== Progress bar =====
   let duration = 3000;
